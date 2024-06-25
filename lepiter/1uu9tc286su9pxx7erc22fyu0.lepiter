@@ -1,0 +1,292 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-12-14T05:17:00.077-04:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-06-25T04:56:43.272-04:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "KHuie9bIDQCd9XfmDbgS3A=="
+							},
+							"code" : "| aList |\r\"List initialization\"\raList := BrSimpleListPlus new\r\t\tmatchParent;\r\t\tborder: Color veryLightGray asBlBorder.\raList\r\titemStencil: [ BrLabel new\r\t\t\taptitude: BrGlamorousLabelAptitude new\r\t\t\t\t\t+ (BrStyleCommonAptitude new\r\t\t\t\t\t\t\tselected: [ :aStyle | aStyle background: Color veryVeryLightGray ]);\r\t\t\tpadding: (BlInsets all: 5) ];\r\titemDataBinder: [ :eachElement :eachClass :eachIndex | eachElement text: eachClass name ];\r\titems: (SystemNavigation new allClasses sorted: [ :a :b | a name < b name ]);\r\toriginalItems: aList items;\r\t\r\"Filter descriptor and summary initialization\"\r\t\r\tfilterDescriptors: {GtFilterDescriptor new\r\t\t\t\tcreator: [ :aFList :aString | \r\t\t\t\t\taFList\r\t\t\t\t\t\tselect: [ :item | item package name asLowercase includesSubstring: aString asLowercase ] ];\r\t\t\t\tnamed: 'Package';\r\t\t\t\torder: 1;\r\t\t\t\temptyDefaultValue: ''.\r\t\t\tGtFilterDescriptor new\r\t\t\t\tcreator: [ :aFList :aString | \r\t\t\t\t\taFList\r\t\t\t\t\t\tselect: [ :item | item name asLowercase includesSubstring: aString asLowercase ] ];\r\t\t\t\tnamed: 'Class';\r\t\t\t\torder: 2;\r\t\t\t\temptyDefaultValue: ''};\r\taddAptitude: (BrSimpleListPlusFoldAptitude\r\t\t\tfold: [ :aListOfItems | aListOfItems inject: 0 into: [ :all :each | all + each linesOfCode ] ]\r\t\t\tfoldLabel: 'Lines of code sum : ')\t"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-12-15T02:41:45.939-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-06-20T03:45:16.383-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "OPBPbujIDQC2MzlxDbgS3A=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "####Building a BrSimpleListPlus from scratch"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-06-14T07:46:40.935-04:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-06-24T03:30:00.136-04:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "oKDl5znXDQCUzlu9Bwb1wg=="
+							},
+							"code" : "BrFileSelectorPlus new folder: '.' asFileReference"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-06-14T07:46:06.773-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-06-24T03:53:15.103-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "GIyP5DnXDQCT5OjjBwb1wg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "###BrFileSelector with name search"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-06-14T07:56:45.287-04:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-06-14T17:48:45.424-04:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "cFbrCzrXDQCViJttBwb1wg=="
+							},
+							"code" : "GtDiffElement onDiff: (TextDiffBuilder from: (BlElement>>#gtFilteredChildrenShortcutsFor:) sourceCode to: (BlElement>>#gtChildrenShortcutsFor:) sourceCode)"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-06-14T17:42:51.719-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-06-19T08:42:05.05-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "oHkAPELXDQCto6tCBwb1wg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "####Differences between BrColumnedList and BrColumnedListPlus in a  gtView"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-12-13T09:14:05.696-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-12-13T09:14:05.696-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "AGC1rcXIDQCitkP+B5xcHw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2023-12-13T09:14:23.911-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2024-06-20T03:48:49.726-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Playing with BrSimpleListPlus and BrColumnedListPlus"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "1868b3ad-c5c8-0d00-a2b5-1ed1079c5c1f"
+	}
+}
