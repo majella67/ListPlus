@@ -1,2 +1,2 @@
 # ListPlus
-## Installation```stMetacello new	repository: 'github://majella67/ListPlus:main/src';	baseline: 'ListPlus';	load```
+## Installation```stMetacello new	repository: 'github://majella67/ListPlus:main/src';	baseline: 'ListPlus';	load```## Load Lepiter				After installing with Metacello, you will be able to execute```st#BaselineOfListPlus asClass loadLepiter```
