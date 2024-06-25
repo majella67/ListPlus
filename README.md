@@ -1,6 +1,5 @@
 # ListPlus
 
-##Intro
 ListPlus is a collection of classes that adds filters to simple lists and columned lists in Glamorous Tollkit.
 This allows you to query data with predefined filters.
 
