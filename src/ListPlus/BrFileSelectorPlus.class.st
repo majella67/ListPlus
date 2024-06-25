@@ -7,7 +7,7 @@ Class {
 { #category : #accessing }
 BrFileSelectorPlus >> createTable [
 	| aTable |
-	aTable := BrColumnedListPlusM new.
+	aTable := BrColumnedListPlus new.
 	aTable
 		rowStencil: BrGlamorousColumnedListSelectableRowElementStencilBuilder new;
 		padding: (BlInsets top: 5);
@@ -22,7 +22,7 @@ BrFileSelectorPlus >> createTable [
 					named: 'Name';
 					order: 1;
 					emptyDefaultValue: ''};
-		addAptitude: BrSimpleListPlusMFoldAptitude simpleCount.
+		addAptitude: BrSimpleListPlusFoldAptitude simpleCount.
 	aTable column
 		title: 'Icon' translated;
 		width: 40;
