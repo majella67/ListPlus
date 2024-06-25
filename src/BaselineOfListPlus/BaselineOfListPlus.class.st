@@ -11,3 +11,18 @@ BaselineOfListPlus >> baseline: spec [
 			spec package: 'ListPlus'
 		]
 ]
+
+{ #category : #accessing }
+BaselineOfListPlus >> loadLepiter [
+	IceRepository registry  
+		detect: [ :aRepository |
+			aRepository name = 'ListPlus' ]
+		ifFound: [ :aRepository | 
+			| defaultDatabase currentProperties |
+			defaultDatabase := LeDatabasesRegistry defaultLogicalDatabase.
+			currentProperties := defaultDatabase properties.
+			currentProperties addRegisteredDirectory: aRepository repositoryDirectory / 'lepiter'.
+			defaultDatabase reload ]
+		ifNone: [
+			self inform: 'Repository not found.' ]
+]
